@@ -17,8 +17,7 @@
     justify-content: space-around;
     align-items: center;
     font-weight: bolder;
-    margin: 20px;
-    padding: 20px;
+    background-image: linear-gradient(to right, #ffc8dd 40%, #bde0fe 100%);
 }
 
 .header img {
@@ -394,6 +393,7 @@ input:focus~.barra::before,textarea:focus~.barra::before{
     position: absolute;
     transition: .3s ease all;
     left: 0%;
+    background: linear-gradient(to right, #ffc8dd 40%, #bde0fe 100%);
 }
 
 .button{
