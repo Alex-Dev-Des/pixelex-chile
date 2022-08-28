@@ -21,16 +21,21 @@
 }
 
 .header img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .header nav {
     text-transform: uppercase;
 }
 
+.header a, .listado-categorias a{
+    text-decoration: none;
+    color: grey;
+}
+
 .header nav a:hover {
-    background-color: #ffc8dd;
+    background-color: #a2d2ff;
     border-radius: 15px;
 
 }
@@ -159,6 +164,7 @@ h3 {
     margin-top: 50px;
     padding: 50px;
     justify-items: center;
+    background-image: linear-gradient(to right, #ffc8dd 40%, #bde0fe 100%);
 }
 
 .grid-footer {
@@ -181,6 +187,8 @@ h3 {
     padding: 1px;
     font-size: 15px;
     text-align: start;
+    text-decoration: none;
+    color: gray;
 }
 
 .footer p {
@@ -283,27 +291,44 @@ article.card {
 }
 
 
-/* Galería */
+/* Galería de proyectos */
 
-.img-galeria {
+#galeria .col-lg-4{
+    padding: 25px;
+}
+
+#galeria img:hover{
+    border: 5px solid #f7f7f7
+}
+
+#galeria img{
+    width: 100%;
+    height: 450px;
+}
+
+.img1 img{
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
     width: 100%;
 }
 
-.img-galeria img {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-
+.img2{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: 80px;
 }
 
-.galeria {
-    padding: 40px;
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: .50px;
-    row-gap: .50px;
+.card:hover .img2 img{
+    border-color: darkcyan;
+    transition: .7s;
 }
 
 
@@ -414,10 +439,6 @@ input:focus~.barra::before,textarea:focus~.barra::before{
 
 @media(max-width: 1920px) {
 
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .header {
         flex-direction: row;
     }
@@ -446,9 +467,6 @@ input:focus~.barra::before,textarea:focus~.barra::before{
 
 
     @media(max-width: 769px) {
-        .galeria {
-            grid-template-columns: repeat(2, 1fr);
-        }
 
         .header {
             flex-direction: column;
@@ -476,9 +494,6 @@ input:focus~.barra::before,textarea:focus~.barra::before{
     }
 
     @media(max-width: 426px) {
-        .galeria {
-            grid-template-columns: repeat(1, 1fr);
-        }
     
         .header {
             flex-direction: column;
