@@ -126,7 +126,7 @@ h3 {
 .listado-categorias {
     display: grid;
     padding: 40px 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     justify-items: center;
 }
@@ -220,74 +220,8 @@ h3 {
 
 /* Blog */
 
-article.card {
-    max-width: 300px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 5px 15px;
-    box-shadow: 0 0 12px #d7d7d7;
-}
-
-.header-card img {
-    border-radius: 8px 8px 0 0;
-    max-height: 200px;
-    height: 200px;
-    width: 100%;
-}
-
-.categoria-card {
-    margin-top: 10px;
-}
-
-.categoria-card span,
-.text-perfil-card a {
-    background-color: #ffc8dd;
-    color: white;
-    padding: .20px .50px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
-.card footer {
-    padding: 0 10px;
-}
-
-.perfil-card {
-    display: flex;
-    align-items: center;
-}
-
-.img-perfil-card {
-    display: flex;
-}
-
-.img-perfil-card img {
-    width: 50px;
-    margin: 10px 10px 10px 0;
-    border-radius: 50%;
-}
-
-.text-perfil-card {
-    display: flex;
-    flex-flow: column;
-}
-
-.text-perfil-card span:nth-child(2) {
-    color: #cfcfcf;
-}
-
-.card-wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    justify-items: center;
-    margin: 20px;
-    padding: 20px;
-}
-
-.text-perfil-card a {
-    font-size: 20px;
-    font-weight: bold;
+.btn-blog{
+    background-color:#ffc8dd;
 }
 
 
